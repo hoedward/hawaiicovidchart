@@ -1,0 +1,16 @@
+button.selected {
+  background-color: #AAA;
+}
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  padding-left: 60px;
+}
+body {
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+#footer {
+  margin-top: 20px;
+}
+

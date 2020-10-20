@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="chart.css">
+  </head>
+  <body>
+    <h1>Daily Passenger Arrivals and New Confirmed COVID-19 Cases</h1>
+    <div class=toolbar>
+      <span>
+        <button id="totalbtn" class="selected" onclick="switchIsland(this)">State Total</button>
+        <button id="oahubtn" onclick="switchIsland(this)">Oʻahu</button>
+        <button id="mauibtn" onclick="switchIsland(this)">Maui</button>
+        <button id="hawaiibtn" onclick="switchIsland(this)">Hawaiʻi</button>
+        <button id="kauaibtn" onclick="switchIsland(this)">Kauaʻi</button>
+      </span>
+      <span>Days: 
+        <button id="30btn" onclick="switchDays(this)">30</button>
+        <button id="60btn" onclick="switchDays(this)">60</button>
+        <button id="90btn" class="selected" onclick="switchDays(this)">90</button>
+      </span>
+    </div>
+    <div id="chart" style="width:900px;height:650px;"></div>
+    <div id="sources">
+      <h3>Data Sources</h3>
+      Passenger arrival data is domestic flights only and is from the <a href="https://dbedt.hawaii.gov/visitor/daily-passenger-counts/">Department of Business, Economic Development and Tourism - Visitor Statistics</a>. (Updated M-F)<br/>
+      COVID infection data is from the <a href="https://health.hawaii.gov/coronavirusdisease2019/what-you-should-know/current-situation-in-hawaii/">Department of Health's COVID-19 Data Dashboard</a>. (Updated Daily)
+    </div>
+    <div id="footer">
+      Last updated: <span id="datespan"></span> HST
+    </div>
+  </body>
+  <script type="text/javascript" src="chart.js"></script>
+</html>
