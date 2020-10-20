@@ -8,16 +8,16 @@
     <h1>Daily Passenger Arrivals and New Confirmed COVID-19 Cases</h1>
     <div class=toolbar>
       <span>
-        <button id="totalbtn" class="selected" onclick="switchIsland(this)">State Total</button>
-        <button id="oahubtn" onclick="switchIsland(this)">Oʻahu</button>
-        <button id="mauibtn" onclick="switchIsland(this)">Maui</button>
-        <button id="hawaiibtn" onclick="switchIsland(this)">Hawaiʻi</button>
-        <button id="kauaibtn" onclick="switchIsland(this)">Kauaʻi</button>
+        <button id="totalbtn" class="selected">State Total</button>
+        <button id="oahubtn">Oʻahu</button>
+        <button id="mauibtn">Maui</button>
+        <button id="hawaiibtn">Hawaiʻi</button>
+        <button id="kauaibtn">Kauaʻi</button>
       </span>
       <span>Days: 
-        <button id="30btn" onclick="switchDays(this)">30</button>
-        <button id="60btn" onclick="switchDays(this)">60</button>
-        <button id="90btn" class="selected" onclick="switchDays(this)">90</button>
+        <button id="30btn">30</button>
+        <button id="60btn">60</button>
+        <button id="90btn" class="selected">90</button>
       </span>
     </div>
     <div id="chart" style="width:900px;height:650px;"></div>
@@ -30,5 +30,8 @@
       Last updated: <span id="datespan"></span> HST
     </div>
   </body>
+  <!--
+    <script type="text/javascript" src="../hawaiicovidchart/chart.js"></script>
+  -->
   <script type="text/javascript" src="chart.js"></script>
 </html>
